@@ -1,1 +1,9 @@
+com\dao\UserMapper.class
+com\model\Login.class
+com\dao\UserDaoImpl.class
+com\controller\LoginController.class
+com\dao\UserDao.class
+com\model\User.class
+com\service\UserServiceImpl.class
 com\controller\IndexController.class
+com\service\UserService.class

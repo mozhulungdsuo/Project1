@@ -20,7 +20,7 @@
 </servlet-mapping>
 <welcome-file-list>
 	<welcome-file>
-		/views/home.jsp
+		home.jsp
 	</welcome-file>
   </welcome-file-list>
 
