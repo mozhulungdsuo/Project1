@@ -33,11 +33,9 @@ public class IndexController {
 	  }
 	  
 	
-	/*@RequestMapping("/")
-
+@RequestMapping(value="/",method=RequestMethod.GET)
 public String index()
 {
 return "index";
 }
-*/
 }

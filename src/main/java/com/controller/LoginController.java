@@ -39,5 +39,9 @@ public class LoginController {
 	    }
 	    return mav;
 	  }
+	  @RequestMapping(value="/something",method=RequestMethod.GET)
+	  public String something() {
+		  return "something";
+	  }
 
 }
