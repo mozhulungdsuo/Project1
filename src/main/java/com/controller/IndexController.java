@@ -1,6 +1,5 @@
 package com.controller;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,13 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.model.User;
-import com.service.*;
+// com.daoimpl.UserDaoImpl;
+//import com.model.User;
+
 
 @Controller
 public class IndexController {
 
-	@Autowired
+	/*@Autowired
 	  public UserService userService;
 	  @RequestMapping(value = "/register", method = RequestMethod.GET)
 	  public ModelAndView showRegister(HttpServletRequest request, HttpServletResponse response) {
@@ -31,11 +31,23 @@ public class IndexController {
 	  userService.register(user);
 	  return new ModelAndView("welcome", "firstname", user.getFirstname());
 	  }
-	  
+	  */
 	
 @RequestMapping(value="/",method=RequestMethod.GET)
-public String index()
+public String some()
 {
-return "index";
+return "something";
 }
+/*
+@Autowired
+UserDaoImpl userdaoimpl;
+@RequestMapping(value="/saveUser",method=RequestMethod.POST)
+public ModelAndView saveUser(@ModelAttribute("user") User user) {
+	ModelAndView mv=new ModelAndView();
+	
+	user.setRole("ROLE_USER");
+	 userdaoimpl.insertUser(user);
+	mv.setViewName("index");
+	return mv;
+}*/
 }
