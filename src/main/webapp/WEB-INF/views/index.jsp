@@ -27,9 +27,9 @@
       </div>        
       <div class="collapse navbar-collapse" id="myNavbar">
    <ul class="nav navbar-nav">     
-   <li><a href="#">Home</a></li>
-   <li><a href="#">Register</a></li>
-   <li><a href="#">Login</a></li>
+   <li><a href="index">Home</a></li>
+   <li><a href="register">Register</a></li>
+   <li><a href="login">Login</a></li>
    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">Jeans</a></li>
@@ -41,7 +41,7 @@
      </div>
     </div>
  </nav>  
-<div class="container-fluid">
+ <%--<div class="container-fluid">
   <div id="myCarousel" class="carousel slide " data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -77,7 +77,8 @@
 </div>   
 
 </div>
- <nav class="navbar navbar-inverse">    
+--%>
+ <%--<nav class="navbar navbar-inverse">    
   
    <div class="navbar-header">
    </div>
@@ -91,7 +92,7 @@
       </ul>
 </div>
       
-      </nav>
+      </nav>--%>
 
 
 </body>

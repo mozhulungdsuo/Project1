@@ -4,81 +4,47 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Registration</title>
+<title>Register User</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<form:form id="regForm" modelAttribute="user" action="registerProcess" method="post">
-                <table align="center">
-                    <tr>
-                        <td>
-                            <form:label path="username">Username</form:label>
-                        </td>
-                        <td>
-                            <form:input path="username" name="username" id="username" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <form:label path="password">Password</form:label>
-                        </td>
-                        <td>
-                            <form:password path="password" name="password" id="password" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <form:label path="firstname">FirstName</form:label>
-                        </td>
-                        <td>
-                            <form:input path="firstname" name="firstname" id="firstname" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <form:label path="lastname">LastName</form:label>
-                        </td>
-                        <td>
-                            <form:input path="lastname" name="lastname" id="lastname" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <form:label path="email">Email</form:label>
-                        </td>
-                        <td>
-                            <form:input path="email" name="email" id="email" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <form:label path="address">Address</form:label>
-                        </td>
-                        <td>
-                            <form:input path="address" name="address" id="address" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <form:label path="phone">Phone</form:label>
-                        </td>
-                        <td>
-                            <form:input path="phone" name="phone" id="phone" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <form:button id="register" name="register">Register</form:button>
-                        </td>
-                    </tr>
-                    <tr></tr>
-                    <tr>
-                        <td></td>
-                        <td><a href="home.jsp">Home</a>
-                        </td>
-                    </tr>
-                </table>
-            </form:form>
 
+
+
+    
+    <form method="post" action="save" >
+  <div class="form-group">
+      <label  for="email">Email:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter email ID"  name="email">
+  </div>
+    <div class="form-group">
+      <label  for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+    </div>
+      <div class="form-group">
+      <label  for="address">Address:</label>
+      <input type="text" class="form-control" id="address" placeholder="Enter address" name="address">
+    </div>
+    <div class="form-group">
+      <label  for="phone">Phone no:</label>
+      <input type="text" class="form-control" id="phone" placeholder="Enter phone no" name="phone">
+    </div>
+    
+     <div class="form-group">
+      <label  for="password">Password:</label>
+      <input type="password" class="form-control" id="password" name="password">
+    </div>
+    
+    <button type="submit" value="Save" class="btn btn-default">Submit</button>
+  </form>
+      
+  
+   
+   
+   
 </body>
 </html>
