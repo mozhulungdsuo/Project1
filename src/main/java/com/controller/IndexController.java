@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.backend.dao.UserDao;
 import com.backend.daoimpl.UserDaoImpl;
 import com.backend.model.User;
 
@@ -65,14 +66,14 @@ public ModelAndView login(ModelAndView mv)
 }
 
 @Autowired
-public UserDaoImpl userdaoimpl;
+UserDaoImpl userDaoImpl;
 @RequestMapping(value="/register",method=RequestMethod.POST)
 public ModelAndView saveUser(@ModelAttribute("user") User user) {
 	ModelAndView mv=new ModelAndView();
 	
 	user.setRole("ROLE_USER");
 	user.setEnabled(false);
-	 userdaoimpl.insertUser(user);
+	userDaoImpl.insertUser(user);
 	mv.setViewName("index");
 	return mv;
 }
